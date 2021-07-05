@@ -1,0 +1,46 @@
+#more-text {
+	display: none;
+}
+
+#read-less-btn {
+	display: none;
+}
+
+#read-more-btn {
+	text-decoration: underline;
+}
+
+.card {
+	margin: auto;
+}
+
+.project-title {
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.contact-title {
+	justify-content: center;
+}
+
+.intro {
+	margin-top: 20px;
+}
+
+.link-stuff ul {
+	display: flex;
+}
+
+.link-stuff ul li {
+	list-style: none;
+	margin: 10px;
+}
+
+.link-stuff ul a {
+	text-decoration: none;
+	color: black;
+}
+
+#about-me-section {
+	background-color: #6c757d;
+}
