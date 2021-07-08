@@ -11,12 +11,42 @@
 }
 
 .card {
-	margin: auto;
+	margin: 1rem;
+}
+
+.card-links {
+	display: flex;
+	margin-top: 1rem;
+	justify-content: space-evenly;
+}
+
+.card-title {
+	text-align: center;
+}
+
+.card-text {
+	text-align: center;
+}
+
+.project-card {
+	justify-content: center;
+}
+
+.intro-1 {
+	justify-content: center;
+	align-items: center;
 }
 
 .project-title {
 	justify-content: center;
 	margin-bottom: 10px;
+	padding-top: 5rem;
+	padding-bottom: 3rem;
+}
+
+.project-icon {
+	width: 100%;
+	object-fit: contain;
 }
 
 .contact-title {
@@ -43,4 +73,30 @@
 
 #about-me-section {
 	background-color: #6c757d;
+}
+
+.about-me-description {
+	justify-content: center;
+	align-items: center;
+}
+
+.welcome-text {
+	text-align: center;
+}
+
+.about-me-text {
+	color: white;
+	text-align: center;
+}
+
+.about-me-about-me {
+	color: white;
+}
+
+.about-me-fas {
+	color: white;
+}
+
+.card {
+	border-radius: 30px;
 }
