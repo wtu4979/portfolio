@@ -10,6 +10,11 @@
 	text-decoration: underline;
 }
 
+.navi-container {
+	display: flex;
+	justify-content: space-around;
+}
+
 .card {
 	margin: 1rem;
 }
@@ -59,11 +64,14 @@
 
 .link-stuff ul {
 	display: flex;
+	margin: 0;
+	align-items: center;
 }
 
 .link-stuff ul li {
 	list-style: none;
-	margin: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .link-stuff ul a {
@@ -72,11 +80,11 @@
 }
 
 #about-me-section {
-	background-color: #6c757d;
+	background-color: rgb(249, 249, 249);
 }
 
 .about-me-description {
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 }
 
@@ -85,18 +93,132 @@
 }
 
 .about-me-text {
-	color: white;
-	text-align: center;
+	padding-left: 0;
+	padding-right: 20%;
+	color: black;
+	text-align: left;
 }
 
 .about-me-about-me {
-	color: white;
+	padding-right: 77%;
+	color: black;
+	text-align: left;
 }
 
 .about-me-fas {
-	color: white;
+	color: black;
 }
 
 .card {
 	border-radius: 30px;
+	margin: 3rem;
+}
+
+.card:hover {
+	animation: bounce 2.5s infinite;
+	-webkit-animation: bounce 2.5s infinite;
+	-moz-animation: bounce 2.5s infinite;
+	-o-animation: bounce 2.5s infinite;
+}
+
+@-webkit-keyframes bounce {
+	0%,
+	100% {
+		-webkit-transform: translateY(0);
+	}
+	50% {
+		-webkit-transform: translateY(-10px);
+	}
+}
+@-moz-keyframes bounce {
+	0%,
+	100% {
+		-moz-transform: translateY(0);
+	}
+	50% {
+		-moz-transform: translateY(-10px);
+	}
+}
+@-o-keyframes bounce {
+	0%,
+	100% {
+		-o-transform: translateY(0);
+	}
+	50% {
+		-o-transform: translateY(-10px);
+	}
+}
+@keyframes bounce {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+}
+
+@keyframes animate {
+	0%,
+	10%,
+	100% {
+		width: 0;
+	}
+	70%,
+	90% {
+		width: 100%;
+	}
+}
+
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 16px;
+}
+.email-container {
+	margin-bottom: 1rem;
+}
+.email-link {
+	color: rgb(178, 204, 239);
+	text-decoration: none;
+}
+
+.email-link h3 {
+	transition: all 0.2s ease-in;
+}
+
+.email-link:hover h3 {
+	color: rgb(178, 204, 239);
+	transform: scale(1.05);
+}
+
+.social-links {
+	display: flex;
+	align-items: center;
+}
+
+.social-links a i {
+	font-size: 2rem;
+	padding-right: 3rem;
+	padding-top: 0.5rem;
+	padding-left: 0.2rem;
+	color: rgb(178, 204, 239);
+}
+
+.navbar-after-icon {
+	margin-left: 1rem;
+}
+
+.navbar {
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+#navbar-WT {
+	font-size: 2rem;
+}
+
+.top {
+	text-decoration: none;
+	color: rgb(42, 42, 42);
 }

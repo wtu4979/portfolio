@@ -13,93 +13,86 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <script src="particles.js"></script>
+    <script src="./app.js"></script>
 
     <title>Wilson Tu</title>
 </head>
-<body>
+<body style="background-color: rgb(249, 249, 249);">
     <!-- Navbar -->
     <div class="container">
-        <nav class="navbar sticky-top">
-            <div class="container-md">
-                <div class="d-flex flex-column">
-                    <h1 class=>Wilson Tu</h1>
-                    <h3 class="lead">Software Engineer & UI/UX Designer</h3>
-                </div>
-                <div class="link-stuff d-flex flex-row">
-                    <ul>
-                        <a href="#about-me-section">
-                            <li>About</li>
-                        </a>
-                        <a href="#projects-section">
-                            <li>Projects</li>
-                        </a>
-                        <li>Resume</li>
-                    </ul>
-                </div>
+        <nav class="navbar fixed-top">
+            <div class="navbar-after-icon">
+                <a class="top" href="#top">
+                    <h1 class="lead" id="navbar-WT">WT</h1>
+                </a>
             </div>
+            <div class="link-stuff d-flex flex-row">
+                <ul>
+                    <a href="#about-me-section">
+                        <li>About</li>
+                    </a>
+                    <a href="#projects-section">
+                        <li>Projects</li>
+                    </a>
+                    <li>Resume</li>
+                </ul>
+            </div>
+
         </nav>
     </div>
 
-
-
-
-    <!-- <div class="container intro d-flex flex-row justify-content-between">
-        <div class="d-flex flex-column">
-            <h1 class=>Wilson Tu</h1>
-            <h3 class="lead">Software Engineer & CS Student</h3>
-        </div>
-        <div class="link-stuff d-flex flex-row">
-            <ul>
-                <a href="#about-me-section">
-                    <li>About</li>
+    <section id="hero-section">
+        <div class="container intro-2 d-flex justify-content-center vh-100 align-items-center">
+            <div class="intro-1 d-flex flex-column">
+                <h1 class="fw-bolder display-1" data-aos="zoom-in">Hi! I am Wilson! <span
+                        style='font-size:70px; position: absolute; top: 9;'>&#128075;</span> </h1>
+                <p class="lead welcome-text display-2" data-aos="zoom-in" data-aos-delay="300">Welcome to my portfolio!</p>
+                <p class="lead" data-aos="zoom-in" data-aos-delay="500">link to work</p>
+                <a href="#about-me-section" data-aos="zoom-in" data-aos-delay="500">
+                    <i class="fas fa-chevron-down"></i>
                 </a>
-                <a href="#projects-section">
-                    <li>Projects</li>
-                </a>
-                <li>Resume</li>
-            </ul>
+            </div>
         </div>
-    </div> -->
-
-    
-
-    <div class="container intro-2 d-flex justify-content-center vh-100 align-items-center">
-        <div class="intro-1 d-flex flex-column">
-            <h1 class="fw-bolder display-1" data-aos="zoom-in">Hi! I am Wilson! <span style='font-size:70px; position: absolute; top: 9;'>&#128075;</span> </h1>
-            <p class="lead welcome-text display-2" data-aos="zoom-in" data-aos-delay="300">Welcome to my portfolio!</p>
-            <p class="lead" data-aos="zoom-in" data-aos-delay="500">link to work</p>
-            <a href="#about-me-section" data-aos="zoom-in" data-aos-delay="500">
-                <i class="fas fa-chevron-down"></i>
-            </a>
-        </div>
-    </div>
+    </section>
 
 
 
-    <section id="about-me-section" class="about-me d-flex vh-100 align-items-center justify-content-evenly">
+    <section id="about-me-section" class="about-me container d-flex vh-100 align-items-center justify-content-center">
         <div class="about-me-description d-flex flex-column" >
             <h1 class="display-5 about-me-about-me" data-aos="fade-right">About Me.</h1>
-            <p class="w-50 lead about-me-text" data-aos="fade-right" data-aos-delay="200">
-                Hi, I'm Wilson! I am currently a student at California State University, Fullerton (CSUF) studying Computer Science.
-                <span id="dots">I am passionate about...</span>
-                <span id="more-text" class="lead">I am passionate about learning all I can in the field of Software Engineering. I
-                    am most interested in working with full stack development. Dolores blanditiis, maiores debitis, velit minima
-                    voluptatibus, nulla facilis accusamus cupiditate ullam aperiam reprehenderit voluptas perferendis hic autem!
-                    Quos, aperiam tempora laborum repellat delectus cumque quisquam ratione architecto atque quibusdam eum cum fuga
-                    rerum molestias, debitis ipsum. Cumque alias aperiam reiciendis ipsam.</span>
-            <p onClick="readMore()" id="read-more-btn">Read More</p>
+            <p class="lead about-me-text" data-aos="fade-right" data-aos-delay="250">
+                I'm a <span>Software Engineer</span> & <span>UI/UX Designer</span> with over 5 years of experience developing, designing, and writing
+                clean code. My focus and specialization is on Full Stack Development. I'm a student at California State University, Fullerton working towards
+                a Bachelor's of Science in Computer Science. I live in Los Angeles, California. I'm currently building side projects and actively looking for
+                internship and job opportunities as a Software Engineer. My goal is to move to New York City after graduating to pursue my dream job in my dream city.
+                Feel free to contact me anytime!
             </p>
             <a href="#projects-section" data-aos="zoom-in" data-aos-delay="500">
                 <i class="about-me-fas fas fa-chevron-down"></i>
             </a>
+        </div>
+        <div class="contact-info" data-aos="fade-left">
+            <div class="email-container">
+                <h1 class="display-5" data-aos="fade-left">Email me</h1>
+                <a data-aos="fade-left" data-aos-delay="250" href="mailto:wilsontu4979@gmail.com" class="email-link">
+                    <h3>wilsontu4979@gmail.com</h3>
+                </a>
+            </div>
+            <div class="follow-me">
+                <h1 class="display-5">Follow Me</h1>
+                <div class="social-links">
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-github"></i></a>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="projects-section" class="container projects">
         <h1 class="display-3 row project-title">Projects</h1>
         <div class="project-card row d-flex">
-            <div class="card" style="width: 18rem;">
+            <div class="card shadow p-3 m-5 bg-body" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">Covid-19 Tracker</h5>
                     <img class="project-icon" src="./imgs/covid-project.png" alt="covid-19 icon">
@@ -148,6 +141,7 @@
     <script>
         AOS.init();
     </script>
+
 
 </body>
 </html>

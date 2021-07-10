@@ -1,5 +1,15 @@
-/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-js', './assets/particles.json', function() {
-  console.log('callback - particles.js config loaded');
-});
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+
+  var name = document.getElementById("navbar-name");
+  var role = document.getElementById("navbar-role");
+
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    name.style.visibility = "hidden";
+    role.style.visibility = "hidden";
+    } else {
+    name.style.visibility = "visible";
+    role.style.visibility = "visible";
+  }
+}
