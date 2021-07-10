@@ -255,6 +255,12 @@
 
 #navbar-WT {
 	font-size: 2rem;
+	transition: all 0.5s ease-in-out;
+}
+
+#navbar-WT:hover {
+	color: rgb(42, 42, 42);
+	transform: scale(1.1);
 }
 
 .top {
@@ -298,6 +304,29 @@
 	box-shadow: inset 0 -35px 0 -1px rgb(178, 204, 239);
 	color: black;
 	cursor: pointer;
+}
+
+.nav-hover {
+	position: relative;
+}
+
+.nav-hover:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: rgb(178, 204, 239);
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.5s ease-in-out;
+}
+
+.nav-hover:hover:before {
+	height: 2.5px;
+	visibility: visible;
+	transform: scaleX(1);
 }
 
 .footer-container {
