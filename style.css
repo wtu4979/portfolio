@@ -97,6 +97,7 @@
 	padding-right: 20%;
 	color: black;
 	text-align: left;
+	font-size: 25px;
 }
 
 .about-me-about-me {
@@ -183,13 +184,28 @@
 	text-decoration: none;
 }
 
-.email-link h3 {
+/* .email-link h3 {
 	transition: all 0.2s ease-in;
-}
+} */
 
 .email-link:hover h3 {
 	color: rgb(178, 204, 239);
-	transform: scale(1.05);
+	animation-duration: 1.5s;
+	animation-name: changeScale;
+	animation-iteration-count: infinite;
+}
+
+@keyframes changeScale {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
 }
 
 .social-links {
@@ -203,6 +219,25 @@
 	padding-top: 0.5rem;
 	padding-left: 0.2rem;
 	color: rgb(178, 204, 239);
+}
+
+.social-links a i:hover {
+	animation-duration: 1.5s;
+	animation-name: changeScaleSocial;
+	animation-iteration-count: infinite;
+}
+
+@keyframes changeScaleSocial {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+
+	100% {
+		transform: scale(1);
+	}
 }
 
 .navbar-after-icon {
@@ -221,4 +256,42 @@
 .top {
 	text-decoration: none;
 	color: rgb(42, 42, 42);
+}
+
+.software-engineer {
+	border-bottom: 3px solid rgb(178, 204, 239);
+	padding-bottom: 1.5px;
+	/* box-shadow: inset 0 -1.5px 0 -1px rgb(57, 59, 61); */
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+.software-engineer:hover {
+	box-shadow: inset 0 -35px 0 -1px rgb(178, 204, 239);
+	color: black;
+	cursor: pointer;
+}
+
+.hero-name {
+	box-shadow: inset 0 -10px 0 -1px rgb(178, 204, 239);
+	text-decoration: none;
+	color: black;
+	transition: all 0.5s ease;
+}
+
+.hero-name:hover {
+	box-shadow: inset 0 -100px 0 -1px rgb(178, 204, 239);
+	color: black;
+}
+
+.full-stack {
+	border-bottom: 3px solid rgb(178, 204, 239);
+	padding-bottom: 1.5px;
+	/* box-shadow: inset 0 -1.5px 0 -1px rgb(57, 59, 61); */
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+.full-stack:hover {
+	box-shadow: inset 0 -35px 0 -1px rgb(178, 204, 239);
+	color: black;
+	cursor: pointer;
 }
