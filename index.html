@@ -46,7 +46,7 @@
     <section id="hero-section">
         <div class="container intro-2 d-flex justify-content-center vh-100 align-items-center">
             <div class="intro-1 d-flex flex-column">
-                <h1 class="fw-bolder display-1" data-aos="zoom-in">Hi! I am <a id="hero-name"class="hero-name" href="#about-me-section"><span>Wilson</span></a>! <span
+                <h1 class="fw-bolder display-1" data-aos="zoom-in">Hi! I am <a id="hero-name"class="hero-name" href="#about-me-section"><span>Wilson</span></a>! <span class="hand-icon"
                         style='font-size:70px; position: absolute; top: 9;'>&#128075;</span> </h1>
                 <p class="lead welcome-text display-2" data-aos="zoom-in" data-aos-delay="300">Welcome to my portfolio!</p>
                 <p class="lead" data-aos="zoom-in" data-aos-delay="500">link to work</p>
@@ -59,19 +59,21 @@
 
 
 
-    <section id="about-me-section" class="about-me container d-flex vh-100 align-items-center justify-content-center">
+    <section id="about-me-section" class="about-me container d-flex vh-100 align-items-center justify-content-center flex-wrap">
         <div class="about-me-description d-flex flex-column" >
             <h1 class="display-5 about-me-about-me" data-aos="fade-right">About Me.</h1>
             <p class="lead about-me-text" data-aos="fade-right" data-aos-delay="250">
                 I'm a <span class="software-engineer">Software Engineer</span> & <span class="designer">UI/UX Designer</span> with over 5 years of experience developing, designing, and writing
                 clean code. My focus and specialization is on <span class="full-stack">Full Stack Development</span>. I'm a student at California State University, Fullerton working towards
-                a Bachelor's of Science in Computer Science. I live in Los Angeles, California. I'm currently building side projects and actively looking for
+                a Bachelor of Science in Computer Science. I live in Los Angeles, California. I'm currently building side projects and actively looking for
                 internship and job opportunities as a Software Engineer. My goal is to move to New York City after graduating to pursue my dream job in my dream city.
                 Feel free to contact me anytime!
             </p>
-            <a href="#projects-section" data-aos="zoom-in" data-aos-delay="500">
-                <i class="about-me-fas fas fa-chevron-down"></i>
-            </a>
+            <div class="link-down">
+                <a href="#projects-section" data-aos="zoom-in" data-aos-delay="250">
+                    <i class="about-me-fas fas fa-chevron-down"></i>
+                </a>
+            </div>
         </div>
         <div class="contact-info" data-aos="fade-left">
             <div class="email-container">
@@ -81,11 +83,11 @@
                 </a>
             </div>
             <div class="follow-me">
-                <h1 class="display-5">Follow Me</h1>
+                <h1 class="follow-me-text display-5">Follow Me</h1>
                 <div class="social-links">
-                    <a target="_blank" href="https://www.linkedin.com/in/wilson-tu/"><i class="fab fa-linkedin-in"></i></a>
-                    <a target="_blank" href="https://www.instagram.com/yuuxtaa_/"><i class="fab fa-instagram"></i></a>
-                    <a target="_blank" href="https://github.com/wtu4979"><i class="fab fa-github"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/wilson-tu/"><i class="follow-me-link fab fa-linkedin-in"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/yuuxtaa_/"><i class="follow-me-link fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://github.com/wtu4979"><i class="follow-me-link fab fa-github"></i></a>
                 </div>
             </div>
         </div>
@@ -106,7 +108,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card shadow" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">Movie Search</h5>
                     <img class="project-icon" src="./imgs/movie-project.png" alt="">
@@ -118,7 +120,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card shadow" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">Cryptocurrency Tracker</h5>
                     <img class="project-icon" src="./imgs/crypto-project.png" alt="">

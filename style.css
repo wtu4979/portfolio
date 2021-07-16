@@ -90,6 +90,7 @@
 .about-me-description {
 	justify-content: flex-start;
 	align-items: center;
+	width: 73%;
 }
 
 .welcome-text {
@@ -110,8 +111,14 @@
 	text-align: left;
 }
 
+.link-down {
+	position: relative;
+	width: 100%;
+}
+
 .about-me-fas {
-	color: black;
+	position: absolute;
+	left: 66.5%;
 }
 
 .card {
@@ -251,6 +258,7 @@
 .navbar {
 	margin-left: 2rem;
 	margin-right: 2rem;
+	background-color: rgb(249, 249, 249);
 }
 
 #navbar-WT {
@@ -320,7 +328,7 @@
 	background-color: rgb(178, 204, 239);
 	visibility: hidden;
 	transform: scaleX(0);
-	transition: all 0.5s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .nav-hover:hover:before {
@@ -343,4 +351,67 @@
 
 .footer-row p {
 	font-size: 13px;
+}
+
+@media (max-width: 375px) {
+	.navbar {
+		margin-left: 0;
+		margin-right: 0;
+		display: flex;
+	}
+	.hand-icon {
+		display: none;
+	}
+
+	.about-me {
+		flex-wrap: wrap;
+	}
+
+	.project-title {
+		margin-top: 20rem;
+		padding: 0;
+	}
+
+	.social-links {
+		justify-content: center;
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.about-me-text {
+		font-size: 1.3rem;
+		justify-content: center;
+		padding-right: 0;
+		text-align: center;
+	}
+	.about-me-about-me {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+	}
+	.link-down {
+		display: none;
+	}
+
+	.project-title {
+		padding-top: 0;
+	}
+
+	.email-container {
+		text-align: center;
+	}
+
+	.follow-me-text {
+		text-align: center;
+	}
+
+	.social-links a i {
+		font-size: 2rem;
+		padding-right: 1rem;
+		padding-top: 0.5rem;
+		padding-left: 1rem;
+		color: rgb(178, 204, 239);
+	}
 }
